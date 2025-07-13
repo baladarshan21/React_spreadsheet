@@ -6,32 +6,26 @@ The `react` package contains only the functionality necessary to define React co
 
 **Note:** by default, React will be in development mode. The development version includes extra warnings about common mistakes, whereas the production version includes extra performance optimizations and strips all error messages. Don't forget to use the [production build](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build) when deploying your application.
 
-## Usage
+# 📋 Spreadsheet UI with React + TypeScript
 
-```js
-import { useState } from 'react';
-import { createRoot } from 'react-dom/client';
+A dynamic spreadsheet-style user interface built with **React**, **TypeScript**, and **Tailwind CSS**. Mimics Airtable-style layout with sortable rows, color-coded tags, and responsive design — all without third-party state managers.
 
-function Counter() {
-  const [count, setCount] = useState(0);
-  return (
-    <>
-      <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>
-        Increment
-      </button>
-    </>
-  );
-}
+---
 
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
-```
+## 🔧 Tech Stack
 
-## Documentation
+- **React 18** (with Vite)
+- **TypeScript** (Strict Mode)
+- **Tailwind CSS**
+- No Redux or Zustand — local component state only
+- No external grid/table libraries
 
-See https://reactjs.org/
+---
 
-## API
+## 📦 Installation
 
-See https://reactjs.org/docs/react-api.html
+```bash
+git clone https://github.com/yourusername/spreadsheet-ui.git
+cd spreadsheet-ui
+npm install
+npm run dev
